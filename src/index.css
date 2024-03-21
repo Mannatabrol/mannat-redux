@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 34px;
+  background-color: rgb(47, 47, 54);
+  justify-content: center; 
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+
+}
+
+li {
+  list-style: none;
+  padding: 23px;
+  text-decoration: none; /* Remove underline */
+}
+
+
+footer {
+  display: flex;
+  gap: 34px;
+  background-color: rgb(47, 47, 54);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 0; /* Push footer to the bottom */
+  position: fixed; /* Position the footer */
+  bottom: 0; /* Stick it to the bottom */
+  width: 100%; /* Make it full-width */
+  justify-content: flex-end; /* Align content to the right */
+}
+
+  .nav-link {
+    color: green;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: blue; /* Change color on hover */
+  }
+  
+  .active {
+    color: red; /* Active link color */
+  }
+  
+
+
+.nav-link:hover {
+  color: blue; /* Change color on hover */
+}
+
+.active {
+  color: red; /* Active link color */
+}
+.nav-link {
+  width: 100; /* Adjust this value as needed */
+}
