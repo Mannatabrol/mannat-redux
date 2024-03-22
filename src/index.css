@@ -51,12 +51,12 @@ footer {
 
 
 .nav-link:hover {
-  color: blue; /* Change color on hover */
+  color: blue; 
 }
 
 .active {
-  color: red; /* Active link color */
+  color: red;
 }
 .nav-link {
-  width: 100; /* Adjust this value as needed */
+  width: 100; 
 }
