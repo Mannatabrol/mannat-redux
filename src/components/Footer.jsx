@@ -6,13 +6,13 @@ const Footer = () => {
     <div>
       <footer>
         <NavLink activeclassname="red" to="/Home" style={{ color: 'orange', textDecoration: 'none' }}>
-          <li>Home{'\u{1F3E0}'}</li> {/* Home emoji */}
+          <li>Home{'\u{1F3E0}'}</li> 
         </NavLink>
         <NavLink activeClassName="red" to="/Signup" style={{ color: 'orange', textDecoration: 'none' }}>
           <li>Sign-up{'\u{270D}'}</li>
         </NavLink>
         <NavLink activeClassName="red" to="/Login" style={{ color: 'orange', textDecoration: 'none' }}>
-          <li>Login{'\u{1F464}'}</li> {/* User emoji */}
+          <li>Login{'\u{1F464}'}</li>
         </NavLink>
       </footer>
     </div>

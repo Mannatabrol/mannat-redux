@@ -35,7 +35,7 @@ const Signup = () => {
     const { name, value } = e.target;
     if (name === 'password' || name === 'confirmPassword') {
       dispatch({ type: 'field', field: name, value });
-      // Check if passwords match
+      
       if (name === 'confirmPassword' && value !== state.password) {
         setPasswordMatchError(true);
       } else {
@@ -48,17 +48,17 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Check if passwords match before submitting
+  
     if (state.password !== state.confirmPassword) {
       setPasswordMatchError(true);
       return;
     }
-    // Store data in localStorage
+    
     localStorage.setItem('user', JSON.stringify(state));
     console.log('User data stored:', state);
-    // Clear the email field in the state
+
     dispatch({ type: 'field', field: 'email', value: '' });
-    // Set submitted state to true
+
     setSubmitted(true);
   };
 

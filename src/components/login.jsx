@@ -16,7 +16,7 @@ const reducer = (state, action) => {
     case 'login':
       return {
         ...state,
-        isLoggedIn: true, // Set isLoggedIn to true on successful login
+        isLoggedIn: true, 
       };
     default:
       return state;
@@ -32,12 +32,11 @@ const Login = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault(); 
     const storedUser = JSON.parse(localStorage.getItem('user'));
     if (storedUser && storedUser.email === state.email && storedUser.password === state.password) {
-      dispatch({ type: 'login' }); // Dispatch login action on successful login
-      alert('Thank you for logging in!'); // Show alert message
-    } else {
+      dispatch({ type: 'login' }); 
+      alert('Thank you for logging in!'); 
       console.log('Invalid credentials');
     }
   };
