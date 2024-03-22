@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <NavLink activeclassname="red" to="/Home" style={{ color: 'orange', textDecoration: 'none' }}>
+        <NavLink activeclassname="red" to="/" style={{ color: 'orange', textDecoration: 'none' }}>
           <li>Home{'\u{1F3E0}'}</li> 
         </NavLink>
         <NavLink activeClassName="red" to="/Signup" style={{ color: 'orange', textDecoration: 'none' }}>

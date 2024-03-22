@@ -9,7 +9,7 @@ import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/Home",
+      path: "/",
       element: <><Navbar/><Home/>
       <Footer /></>
     },
